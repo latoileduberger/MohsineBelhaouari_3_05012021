@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/6f8e6a0703.js"
       crossorigin="anonymous"
@@ -13,25 +23,19 @@
 
   <body>
     <header>
-      <div class="logo">
-        <img src="images/logo/ohmyfood.png" alt="Logo Ohmyfood" />
-        <h1 id="ohmyfood">Ohmyfood</h1>
-      </div>
       <div>
-        <form>
-          <i class="fas fa-map-marker-alt"></i>
-          <input
-            type="search"
-            class="search"
-            name="q"
-            placeholder="Paris, Belleville"
-          />
-        </form>
+        <h1>Ohmyfood</h1>
       </div>
     </header>
 
     <main>
       <section>
+        <div class="localisation">
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            Paris, Belleville
+          </p>
+        </div>
         <div>
           <h2>Réservez le menu qui vous convient</h2>
           <p>
@@ -121,7 +125,7 @@
     </main>
 
     <footer>
-      <div class="logo-footer">
+      <div class="footer__logo">
         <img src="images/logo/ohmyfood.png" alt="Logo Ohmyfood" />
         <div>
           <i class="fas fa-utensils"></i>
