@@ -1,0 +1,12 @@
+.principal {
+  text-align: center;
+  .principal__localisation {
+    background-color: #eaeaea;
+    padding: 1px;
+    margin-left: -20px;
+    margin-right: -20px;
+    .fa-map-marker-alt {
+      margin-right: 8px;
+    }
+  }
+}
