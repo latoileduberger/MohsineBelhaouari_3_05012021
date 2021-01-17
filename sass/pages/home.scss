@@ -1,12 +1,41 @@
 .principal {
   text-align: center;
-  .principal__localisation {
+  background-color: #f6f6f6;
+  @include full-width;
+  padding-bottom: 25px;
+  &__localisation {
     background-color: #eaeaea;
+    border-top: 2px solid #d4d4d4;
     padding: 1px;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-bottom: 40px;
     .fa-map-marker-alt {
       margin-right: 8px;
     }
+  }
+}
+
+.btn--principale {
+  text-align: center;
+  background-color: #f6f6f6;
+  @include full-width;
+  padding-bottom: 60px;
+
+  a {
+    color: #ffffff;
+    background: linear-gradient(170deg, $Secondary-color, $Primary-color);
+    box-shadow: 0px 5px 5px lightgrey;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+  }
+}
+
+aside {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .function__order {
+    display: flex;
+    align-items: center;
   }
 }
