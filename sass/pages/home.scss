@@ -1,6 +1,6 @@
 .principal {
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: $Back-color;
   @include full-width;
   padding-bottom: 25px;
   &__localisation {
@@ -16,7 +16,7 @@
 
 .btn--principale {
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: $Back-color;
   @include full-width;
   padding-bottom: 60px;
 
@@ -34,8 +34,23 @@
 aside {
   margin-top: 40px;
   margin-bottom: 40px;
-  .function__order {
+  .function {
     display: flex;
     align-items: center;
+    p {
+      background: $Primary-color;
+      color: white;
+      padding: 0.2em 0.55em;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    .fas {
+      margin-right: 20px;
+      opacity: 0.5;
+      &.fa-store {
+        color: $Primary-color;
+        opacity: 1;
+      }
+    }
   }
 }

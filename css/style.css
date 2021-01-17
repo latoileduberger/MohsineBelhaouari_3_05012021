@@ -59,9 +59,24 @@ aside {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-aside .function__order {
+aside .function {
   display: flex;
   align-items: center;
+}
+aside .function p {
+  background: #9356dc;
+  color: white;
+  padding: 0.2em 0.55em;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+aside .function .fas {
+  margin-right: 20px;
+  opacity: 0.5;
+}
+aside .function .fas.fa-store {
+  color: #9356dc;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
