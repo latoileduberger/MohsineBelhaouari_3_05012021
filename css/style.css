@@ -16,6 +16,10 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+p {
+  font-size: 13px;
+}
+
 h1 {
   text-align: center;
   font-size: 23px;
@@ -62,13 +66,19 @@ aside {
 aside .function {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
+}
+aside .function__order {
+  background-color: #f6f6f6;
+  padding: 20px;
+  width: 100%;
+  border-radius: 0 20px 20px 0;
 }
 aside .function p {
   background: #9356dc;
   color: white;
   padding: 0.2em 0.55em;
   border-radius: 50%;
-  margin-right: 20px;
 }
 aside .function .fas {
   margin-right: 20px;
