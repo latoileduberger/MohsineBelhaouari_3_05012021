@@ -1,5 +1,6 @@
 body {
   margin: 20px;
+  width: 100%;
 }
 
 a {
@@ -66,28 +67,57 @@ aside {
 aside .function {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 aside .function__order {
   background-color: #f6f6f6;
   padding: 20px;
   width: 100%;
   border-radius: 20px 20px 20px 20px;
-  margin-left: -10px;
+  margin-left: 10px;
+  box-shadow: 0px 5px 5px lightgrey;
+}
+aside .function > .dark {
+  background-color: #f5edff;
 }
 aside .function__number {
   background: #9356dc;
   color: white;
   padding: 0.2em 0.55em;
   border-radius: 50%;
+  position: absolute;
 }
 aside .function .fas {
   margin-right: 20px;
+  margin-left: 10px;
   opacity: 0.5;
 }
 aside .function .fas.fa-store {
   color: #9356dc;
   opacity: 1;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.restaurant__menu {
+  width: 100%;
+  margin: 0;
+  height: 250px;
+}
+.restaurant__menu__new {
+  position: absolute;
+  top: 0;
+}
+.restaurant__menu img {
+  width: 100%;
+  border-radius: 20px;
+  height: 175px;
 }
 
 /*# sourceMappingURL=style.css.map */
