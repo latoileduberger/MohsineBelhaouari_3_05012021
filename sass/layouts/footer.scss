@@ -1,12 +1,8 @@
 footer {
   background-color: #353535;
   @include full-width;
-  margin-bottom: -20px;
-  padding: 20px;
   color: white;
-  a {
-    color: white;
-  }
+  margin-bottom: -5px;
 }
 
 .footer-logo {

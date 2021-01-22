@@ -1,18 +1,25 @@
 .principal {
   text-align: center;
   background-color: $Back-color;
-  @include full-width;
   padding-bottom: 25px;
   &__localisation {
+    @include full-width;
     background-color: #eaeaea;
     border-top: 2px solid #d4d4d4;
     padding: 1px;
     margin-bottom: 40px;
     p {
-      font-weight: bold;
+      @include opacity-text;
     }
     .fa-map-marker-alt {
       margin-right: 8px;
+    }
+  }
+  &__description {
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      @include opacity-text;
     }
   }
 }
@@ -24,10 +31,10 @@
   padding-bottom: 60px;
 
   a {
-    color: #ffffff;
+    @include opacity-text;
     background: linear-gradient(170deg, $Secondary-color, $Primary-color);
     @include border-shadow;
-    padding: 10px;
+    padding: 15px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -43,14 +50,23 @@ aside {
     margin-bottom: 20px;
 
     &__order {
+      display: flex;
+      align-items: center;
       background-color: $Back-color;
-      padding: 20px;
+      padding: 15px;
       width: 100%;
       margin-left: 10px;
       @include border-shadow;
+      P {
+        font-weight: 600;
+        @include opacity-text;
+      }
     }
     > .dark {
       background-color: #f5edff;
+      p {
+        @include opacity-text;
+      }
     }
 
     &__number {
@@ -62,7 +78,7 @@ aside {
     }
     .fas {
       margin-right: 20px;
-      margin-left: 10px;
+      margin-left: 15px;
       opacity: 0.5;
       &.fa-store {
         color: $Primary-color;
@@ -77,8 +93,6 @@ aside {
   @include full-width;
   padding-top: 25px;
   padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
   &__menu {
     background-color: #ffffff;
     @include border-shadow;
@@ -104,9 +118,15 @@ aside {
     padding-right: 15px;
   }
   &__description {
-    line-height: 4px;
+    line-height: 6px;
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      @include opacity-text;
+    }
   }
   .far {
     font-size: 20px;
+    @include opacity-text;
   }
 }
