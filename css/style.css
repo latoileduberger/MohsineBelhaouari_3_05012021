@@ -1,6 +1,6 @@
 body {
   margin: 20px;
-  width: 100%;
+  width: auto;
 }
 
 a {
@@ -12,18 +12,45 @@ h1 {
 }
 
 h2,
-h3,
-p {
+h3 {
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
 p {
-  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 h1 {
   text-align: center;
-  font-size: 23px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+footer {
+  background-color: #353535;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  padding: 20px;
+  color: white;
+}
+footer a {
+  color: white;
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-family: "Shrikhand";
+}
+
+.footer__icon {
+  display: flex;
+  align-items: center;
+}
+.footer__icon .fas {
+  padding-right: 8px;
 }
 
 .principal {
@@ -38,6 +65,9 @@ h1 {
   border-top: 2px solid #d4d4d4;
   padding: 1px;
   margin-bottom: 40px;
+}
+.principal__localisation p {
+  font-weight: bold;
 }
 .principal__localisation .fa-map-marker-alt {
   margin-right: 8px;
@@ -102,6 +132,7 @@ aside .function .fas.fa-store {
   margin-left: -20px;
   margin-right: -20px;
   padding-top: 25px;
+  padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -128,12 +159,12 @@ aside .function .fas.fa-store {
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 8px;
 }
-.restaurant__info h3,
-.restaurant__info p {
-  margin: 0;
-  padding-top: 5px;
+.restaurant__description {
+  line-height: 4px;
+}
+.restaurant .far {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

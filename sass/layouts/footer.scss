@@ -1,0 +1,22 @@
+footer {
+  background-color: #353535;
+  @include full-width;
+  margin-bottom: -20px;
+  padding: 20px;
+  color: white;
+  a {
+    color: white;
+  }
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-family: "Shrikhand";
+}
+.footer__icon {
+  display: flex;
+  align-items: center;
+  .fas {
+    padding-right: 8px;
+  }
+}

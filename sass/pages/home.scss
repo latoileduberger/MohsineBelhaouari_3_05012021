@@ -8,6 +8,9 @@
     border-top: 2px solid #d4d4d4;
     padding: 1px;
     margin-bottom: 40px;
+    p {
+      font-weight: bold;
+    }
     .fa-map-marker-alt {
       margin-right: 8px;
     }
@@ -73,6 +76,7 @@ aside {
   background-color: $Back-color;
   @include full-width;
   padding-top: 25px;
+  padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
   &__menu {
@@ -98,11 +102,11 @@ aside {
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 8px;
-    h3,
-    p {
-      margin: 0;
-      padding-top: 5px;
-    }
+  }
+  &__description {
+    line-height: 4px;
+  }
+  .far {
+    font-size: 20px;
   }
 }
