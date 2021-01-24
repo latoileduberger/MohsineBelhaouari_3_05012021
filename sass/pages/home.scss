@@ -5,7 +5,7 @@
   &__localisation {
     @include full-width;
     background-color: #eaeaea;
-    border-top: 2px solid #d4d4d4;
+    border-top: 3px solid #d4d4d4;
     padding: 1px;
     margin-bottom: 40px;
     p {
@@ -99,15 +99,22 @@ aside {
     width: 100%;
     margin-left: 0px;
     height: 250px;
+    position: relative;
   }
   &__new {
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: #99e2d0;
+    color: #008766;
+    padding: 10px;
+    border-radius: 5px;
   }
   img {
     width: 100%;
     border-radius: 20px 20px 0 0;
     height: 175px;
+    object-fit: cover;
   }
 
   &__info {

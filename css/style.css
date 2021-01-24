@@ -45,11 +45,13 @@ footer {
   padding: 20px;
   color: white;
   margin-bottom: -5px;
+  line-height: 12px;
 }
 
 .footer-logo {
   font-size: 18px;
   font-family: "Shrikhand";
+  opacity: 0.8;
 }
 
 .footer__icon {
@@ -58,6 +60,15 @@ footer {
 }
 .footer__icon .fas {
   padding-right: 8px;
+  opacity: 0.8;
+  font-size: 12px;
+}
+.footer__icon .fa-hands-helping {
+  font-size: 10px;
+}
+
+p {
+  opacity: 0.8;
 }
 
 .principal {
@@ -70,7 +81,7 @@ footer {
   margin-right: -20px;
   padding: 20px;
   background-color: #eaeaea;
-  border-top: 2px solid #d4d4d4;
+  border-top: 3px solid #d4d4d4;
   padding: 1px;
   margin-bottom: 40px;
 }
@@ -165,15 +176,22 @@ aside .function .fas.fa-store {
   width: 100%;
   margin-left: 0px;
   height: 250px;
+  position: relative;
 }
 .restaurant__new {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: #99e2d0;
+  color: #008766;
+  padding: 10px;
+  border-radius: 5px;
 }
 .restaurant img {
   width: 100%;
   border-radius: 20px 20px 0 0;
   height: 175px;
+  object-fit: cover;
 }
 .restaurant__info {
   display: flex;
