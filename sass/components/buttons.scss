@@ -1,1 +1,15 @@
+.btn--principale {
+  text-align: center;
+  background-color: $Back-color;
+  @include full-width;
+  padding-bottom: 60px;
 
+  a {
+    @include opacity-text;
+    background: linear-gradient(170deg, $Secondary-color, $Primary-color);
+    @include border-shadow;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
