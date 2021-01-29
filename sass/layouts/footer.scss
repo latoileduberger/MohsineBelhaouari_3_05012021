@@ -1,8 +1,9 @@
 footer {
   background-color: #353535;
   @include full-width;
+  @include full-height;
   color: white;
-  margin-bottom: -5px;
+  margin-bottom: -10px;
   line-height: 12px;
 }
 

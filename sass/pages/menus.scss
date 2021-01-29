@@ -1,0 +1,53 @@
+.menu {
+  background-color: $Back-color;
+  @include full-width;
+  img {
+    height: 255px;
+    margin-left: -20px;
+    margin-right: -20px;
+    object-fit: cover;
+    position: relative;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -50px;
+    position: sticky;
+    border-radius: 40px;
+    background-color: $Back-color;
+    @include full-width;
+    padding-top: 15px;
+    padding-bottom: 0;
+    h2 {
+      font-family: "Shrikhand";
+      font-weight: 500;
+    }
+    .far {
+      font-size: 26px;
+      @include opacity-text;
+      margin-right: 10px;
+    }
+  }
+  &__subtitle {
+    border-bottom: 3px solid $Tertiary-color;
+    padding-bottom: 3px;
+    font-weight: 400;
+    width: 45px;
+  }
+  &__bloc {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: white;
+    @include border-shadow;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    &__description {
+      line-height: 0px;
+      @include opacity-text;
+      font-weight: 400;
+    }
+  }
+}
