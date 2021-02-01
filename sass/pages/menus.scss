@@ -1,3 +1,11 @@
+.fa-arrow-left {
+  color: black;
+  @include opacity-text;
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
 .menu {
   background-color: $Back-color;
   img {
