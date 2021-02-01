@@ -1,6 +1,5 @@
 .menu {
   background-color: $Back-color;
-  @include full-width;
   img {
     height: 255px;
     object-fit: cover;
@@ -30,6 +29,7 @@
   }
   &__section {
     padding-bottom: 15px;
+    @include full-width;
   }
   &__subtitle {
     border-bottom: 3px solid $Tertiary-color;
