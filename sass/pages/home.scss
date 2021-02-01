@@ -10,6 +10,7 @@
     padding: 10px;
     margin-bottom: 40px;
     p {
+      padding-top: 5px;
       @include opacity-text;
     }
     .fa-map-marker-alt {
@@ -127,12 +128,12 @@ aside {
     h3 {
       margin: 0;
       padding-top: 10px;
+      padding-bottom: 5px;
     }
     p {
       font-weight: 400;
       @include opacity-text;
       margin: 0;
-      padding-top: 5px;
       padding-bottom: 15px;
     }
   }

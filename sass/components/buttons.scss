@@ -6,7 +6,7 @@
 
   a {
     @include opacity-text;
-    background: linear-gradient(170deg, $Secondary-color, $Primary-color);
+    background: linear-gradient(180deg, $Secondary-color, $Primary-color);
     border-radius: 30px;
     box-shadow: 0px 5px 5px lightgrey;
     padding: 15px;

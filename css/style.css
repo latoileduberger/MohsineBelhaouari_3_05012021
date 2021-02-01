@@ -47,7 +47,7 @@ p {
 }
 .btn--principale a {
   opacity: 0.8;
-  background: linear-gradient(170deg, #ff79da, #9356dc);
+  background: linear-gradient(180deg, #ff79da, #9356dc);
   border-radius: 30px;
   box-shadow: 0px 5px 5px lightgrey;
   padding: 15px;
@@ -124,6 +124,7 @@ p {
   margin-bottom: 40px;
 }
 .principal__localisation p {
+  padding-top: 5px;
   opacity: 0.8;
 }
 .principal__localisation .fa-map-marker-alt {
@@ -239,12 +240,12 @@ aside .function .fas.fa-store {
 .restaurant__description h3 {
   margin: 0;
   padding-top: 10px;
+  padding-bottom: 5px;
 }
 .restaurant__description p {
   font-weight: 400;
   opacity: 0.8;
   margin: 0;
-  padding-top: 5px;
   padding-bottom: 15px;
 }
 .restaurant .far {
@@ -266,7 +267,6 @@ aside .function .fas.fa-store {
   margin-left: -20px;
   margin-right: -20px;
   object-fit: cover;
-  position: relative;
 }
 .menu__title {
   display: flex;
@@ -285,17 +285,22 @@ aside .function .fas.fa-store {
 }
 .menu__title h2 {
   font-family: "Shrikhand";
-  font-weight: 500;
+  font-weight: 600;
 }
 .menu__title .far {
   font-size: 26px;
   opacity: 0.8;
   margin-right: 10px;
 }
+.menu__section {
+  padding-bottom: 15px;
+}
 .menu__subtitle {
   border-bottom: 3px solid #99e2d0;
   padding-bottom: 3px;
   font-weight: 400;
+  opacity: 0.7;
+  font-size: 16px;
   width: 45px;
 }
 .menu__bloc {
@@ -305,14 +310,34 @@ aside .function .fas.fa-store {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 5px 5px lightgrey;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
 .menu__bloc__description {
-  line-height: 0px;
+  font-weight: 400;
+}
+.menu__bloc h3 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.menu__bloc p {
   opacity: 0.8;
   font-weight: 400;
+  font-size: 14px;
+}
+.menu__prix p {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+.btn--principale {
+  padding-top: 30px;
+}
+.btn--principale a {
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 /*# sourceMappingURL=style.css.map */
