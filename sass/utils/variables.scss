@@ -22,6 +22,12 @@ $Back-color: #f6f6f6;
 @mixin opacity-text {
   opacity: 0.8;
 }
+
 @mixin opacity-title {
   opacity: 0.9;
+}
+
+@mixin marge {
+  margin-top: 50px;
+  margin-bottom: 70px;
 }

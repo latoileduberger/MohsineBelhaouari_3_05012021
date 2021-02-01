@@ -27,8 +27,13 @@ h3 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
+}
+
+.far,
+.fas {
+  font-size: 21px;
 }
 
 .btn--principale {
@@ -43,11 +48,13 @@ p {
 .btn--principale a {
   opacity: 0.8;
   background: linear-gradient(170deg, #ff79da, #9356dc);
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 0px 5px 5px lightgrey;
   padding: 15px;
   padding-left: 20px;
   padding-right: 20px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 h1 {
@@ -68,7 +75,6 @@ footer {
   padding-bottom: 20px;
   color: white;
   margin-bottom: -10px;
-  line-height: 12px;
 }
 
 .footer-logo {
@@ -98,6 +104,10 @@ p {
   text-align: center;
   background-color: #f6f6f6;
   padding-bottom: 25px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .principal__localisation {
   margin-left: -20px;
@@ -115,6 +125,10 @@ p {
 .principal__localisation .fa-map-marker-alt {
   margin-right: 8px;
 }
+.principal__description h2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .principal__description p {
   font-size: 18px;
   font-weight: 300;
@@ -122,13 +136,13 @@ p {
 }
 
 aside {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 aside .function {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 aside .function__order {
   display: flex;
@@ -156,6 +170,7 @@ aside .function__number {
   padding: 0.2em 0.55em;
   border-radius: 50%;
   position: absolute;
+  opacity: 1;
 }
 aside .function .fas {
   margin-right: 20px;
@@ -165,6 +180,7 @@ aside .function .fas {
 aside .function .fas.fa-store {
   color: #9356dc;
   opacity: 1;
+  font-size: 16px;
 }
 
 .restaurant {
@@ -182,7 +198,6 @@ aside .function .fas.fa-store {
   box-shadow: 0px 5px 5px lightgrey;
   width: 100%;
   margin-left: 0px;
-  height: 250px;
   position: relative;
 }
 .restaurant__new {
@@ -193,6 +208,7 @@ aside .function .fas.fa-store {
   color: #008766;
   padding: 10px;
   border-radius: 5px;
+  opacity: 1;
 }
 .restaurant img {
   width: 100%;
@@ -207,16 +223,11 @@ aside .function .fas.fa-store {
   padding-left: 15px;
   padding-right: 15px;
 }
-.restaurant__description {
-  line-height: 6px;
-}
 .restaurant__description p {
-  font-size: 16px;
   font-weight: 300;
   opacity: 0.8;
 }
 .restaurant .far {
-  font-size: 20px;
   opacity: 0.8;
 }
 
