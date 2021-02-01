@@ -56,6 +56,10 @@ p {
   font-weight: 400;
   font-size: 15px;
 }
+.btn--principale .order {
+  padding-left: 55px;
+  padding-right: 55px;
+}
 
 h1 {
   font-family: "Shrikhand", cursive;
@@ -63,6 +67,7 @@ h1 {
   font-size: 28px;
   margin: 10px;
   opacity: 0.9;
+  color: black;
 }
 
 footer {
@@ -332,12 +337,9 @@ aside .function .fas.fa-store {
   padding-right: 10px;
 }
 
-.btn--principale {
-  padding-top: 30px;
-}
-.btn--principale a {
-  padding-left: 55px;
-  padding-right: 55px;
+.btn--order {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

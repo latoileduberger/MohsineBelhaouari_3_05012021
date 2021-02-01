@@ -4,4 +4,5 @@ h1 {
   font-size: 28px;
   margin: 10px;
   @include opacity-title;
+  color: black;
 }
