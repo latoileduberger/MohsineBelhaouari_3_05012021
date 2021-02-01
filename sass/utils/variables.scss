@@ -4,8 +4,6 @@ $Tertiary-color: #99e2d0;
 $Back-color: #f6f6f6;
 
 @mixin full-width {
-  margin-left: -20px;
-  margin-right: -20px;
   padding-left: 20px;
   padding-right: 20px;
 }

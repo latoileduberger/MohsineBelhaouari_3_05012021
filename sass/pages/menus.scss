@@ -3,9 +3,9 @@
   @include full-width;
   img {
     height: 255px;
-    margin-left: -20px;
-    margin-right: -20px;
     object-fit: cover;
+    box-sizing: content-box;
+    width: 100%;
   }
   &__title {
     display: flex;

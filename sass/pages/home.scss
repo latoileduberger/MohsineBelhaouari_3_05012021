@@ -2,9 +2,7 @@
   text-align: center;
   background-color: $Back-color;
   padding-bottom: 25px;
-  @include full-width;
   &__localisation {
-    @include full-width;
     background-color: #eaeaea;
     border-top: 3px solid #d4d4d4;
     padding: 10px;
@@ -20,8 +18,8 @@
   }
   &__description {
     h2 {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
     p {
       font-size: 18px;
@@ -33,6 +31,7 @@
 
 aside {
   @include marge;
+  @include full-width;
   h2 {
     padding-bottom: 10px;
   }
