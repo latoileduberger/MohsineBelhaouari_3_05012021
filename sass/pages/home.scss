@@ -7,13 +7,14 @@
     @include full-width;
     background-color: #eaeaea;
     border-top: 3px solid #d4d4d4;
-    padding: 1px;
+    padding: 10px;
     margin-bottom: 40px;
     p {
       @include opacity-text;
     }
     .fa-map-marker-alt {
       margin-right: 8px;
+      font-size: 15px;
     }
   }
   &__description {
@@ -31,6 +32,9 @@
 
 aside {
   @include marge;
+  h2 {
+    padding-bottom: 10px;
+  }
 
   .function {
     display: flex;
@@ -41,13 +45,14 @@ aside {
       display: flex;
       align-items: center;
       background-color: $Back-color;
-      padding: 15px;
+      padding: 25px;
       width: 100%;
       margin-left: 10px;
       @include border-shadow;
       P {
         font-weight: 600;
         @include opacity-text;
+        padding: 0;
       }
     }
     > .dark {
@@ -89,16 +94,20 @@ aside {
     width: 100%;
     margin-left: 0px;
     position: relative;
+    margin-bottom: 25px;
   }
   &__new {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 10px;
     background: #99e2d0;
     color: #008766;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 6px;
+    border-radius: 3px;
+    width: 70px;
     opacity: 1;
+    text-align: center;
+    font-size: 13px;
   }
   img {
     width: 100%;
@@ -115,9 +124,16 @@ aside {
     padding-right: 15px;
   }
   &__description {
+    h3 {
+      margin: 0;
+      padding-top: 10px;
+    }
     p {
-      font-weight: 300;
+      font-weight: 400;
       @include opacity-text;
+      margin: 0;
+      padding-top: 5px;
+      padding-bottom: 15px;
     }
   }
   .far {

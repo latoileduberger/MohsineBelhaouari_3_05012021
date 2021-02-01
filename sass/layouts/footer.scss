@@ -10,6 +10,7 @@ footer {
   font-size: 18px;
   font-family: "Shrikhand";
   @include opacity-text;
+  margin: 0;
 }
 .footer__icon {
   display: flex;
@@ -18,6 +19,7 @@ footer {
     padding-right: 8px;
     @include opacity-text;
     font-size: 12px;
+    padding-bottom: 10px;
   }
   .fa-hands-helping {
     font-size: 10px;
@@ -26,4 +28,6 @@ footer {
 
 p {
   @include opacity-text;
+  margin: 0;
+  padding-bottom: 10px;
 }
