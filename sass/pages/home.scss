@@ -139,4 +139,7 @@ aside {
   .far {
     @include opacity-text;
   }
+  a {
+    color: black;
+  }
 }

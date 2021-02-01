@@ -250,6 +250,9 @@ aside .function .fas.fa-store {
 .restaurant .far {
   opacity: 0.8;
 }
+.restaurant a {
+  color: black;
+}
 
 .menu {
   background-color: #f6f6f6;
