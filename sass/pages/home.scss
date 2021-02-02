@@ -155,14 +155,17 @@
 @media screen and (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 
-  aside h2 {
+  aside {
+    @include background-media-1;
+  }
+  h2 {
     text-align: center;
   }
 
   .restaurant h2 {
+    text-align: left;
     padding-left: 15px;
   }
-
   .restaurant--tablets {
     display: flex;
   }

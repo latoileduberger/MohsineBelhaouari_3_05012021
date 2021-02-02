@@ -159,8 +159,8 @@ h1 {
   }
 
   aside {
-    margin-top: 50px;
-    margin-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 70px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -276,11 +276,16 @@ h1 {
 }
 @media screen and (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  aside h2 {
+  aside {
+    background: linear-gradient(310deg, #99e2d0 0%, #f6f6f6 10%, #f6f6f6 80%, #99e2d0 100%);
+  }
+
+  h2 {
     text-align: center;
   }
 
   .restaurant h2 {
+    text-align: left;
     padding-left: 15px;
   }
 
