@@ -1,32 +1,60 @@
-footer {
-  background-color: #353535;
-  @include full-width;
-  @include full-height;
-  color: white;
-}
+@media screen and (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 
-.footer-logo {
-  font-size: 18px;
-  font-family: "Shrikhand";
-  @include opacity-text;
-  margin: 0;
-}
-.footer__icon {
-  display: flex;
-  align-items: center;
-  .fas {
-    padding-right: 8px;
+  footer {
+    background-color: #353535;
+    @include full-width;
+    @include full-height;
+    color: white;
+  }
+
+  .footer-logo {
+    font-size: 18px;
+    font-family: "Shrikhand";
     @include opacity-text;
-    font-size: 12px;
+    margin: 0;
+  }
+  .footer__icon {
+    display: flex;
+    align-items: center;
+    .fas {
+      padding-right: 8px;
+      @include opacity-text;
+      font-size: 12px;
+      padding-bottom: 10px;
+    }
+    .fa-hands-helping {
+      font-size: 10px;
+    }
+  }
+
+  p {
+    @include opacity-text;
+    margin: 0;
     padding-bottom: 10px;
   }
-  .fa-hands-helping {
-    font-size: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+  footer {
+    padding-left: 35px;
+    .footer--tablets {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 }
 
-p {
-  @include opacity-text;
-  margin: 0;
-  padding-bottom: 10px;
+@media screen and (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+
+  .footer--desktops {
+    display: flex;
+    justify-content: center;
+    p {
+      padding-right: 50px;
+    }
+  }
 }
