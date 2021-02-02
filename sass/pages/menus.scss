@@ -1,81 +1,113 @@
-.fa-arrow-left {
-  color: black;
-  @include opacity-text;
-  position: absolute;
-  padding-left: 20px;
-  padding-top: 10px;
+@media screen and (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  .fa-arrow-left {
+    color: black;
+    @include opacity-text;
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .menu {
+    background-color: $Back-color;
+    img {
+      height: 255px;
+      object-fit: cover;
+      box-sizing: content-box;
+      width: 100%;
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -50px;
+      position: sticky;
+      border-radius: 40px;
+      background-color: $Back-color;
+      @include full-width;
+      padding-top: 15px;
+      padding-bottom: 0;
+      h2 {
+        font-family: "Shrikhand";
+        font-weight: 600;
+      }
+      .far {
+        font-size: 26px;
+        @include opacity-text;
+        margin-right: 10px;
+      }
+    }
+    &__section {
+      padding-bottom: 15px;
+      @include full-width;
+    }
+    &__subtitle {
+      border-bottom: 3px solid $Tertiary-color;
+      padding-bottom: 3px;
+      font-weight: 400;
+      opacity: 0.7;
+      font-size: 16px;
+      width: 45px;
+    }
+    &__bloc {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      background-color: white;
+      @include border-shadow;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 25px;
+      &__description {
+        font-weight: 400;
+      }
+      h3 {
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+      p {
+        @include opacity-text;
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+    &__prix p {
+      font-weight: 600;
+      padding-right: 10px;
+    }
+  }
+  .btn--order {
+    margin-top: 30px;
+    padding-bottom: 100px;
+  }
 }
 
-.menu {
-  background-color: $Back-color;
-  img {
-    height: 255px;
-    object-fit: cover;
-    box-sizing: content-box;
-    width: 100%;
-  }
-  &__title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: -50px;
-    position: sticky;
-    border-radius: 40px;
-    background-color: $Back-color;
-    @include full-width;
-    padding-top: 15px;
-    padding-bottom: 0;
-    h2 {
-      font-family: "Shrikhand";
-      font-weight: 600;
+@media screen and (min-width: 480px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+  .menu {
+    @include background-media;
+    &__title {
+      justify-content: center;
+      @include background-media;
+      h2 {
+        padding-right: 30px;
+      }
     }
-    .far {
-      font-size: 26px;
-      @include opacity-text;
-      margin-right: 10px;
+    &__section {
+      max-width: 430px;
+      margin: auto;
+    }
+    &__bloc {
+      max-width: 410px;
+      margin: auto;
+      margin-bottom: 25px;
     }
   }
-  &__section {
-    padding-bottom: 15px;
-    @include full-width;
+  .btn--order {
+    @include background-media;
   }
-  &__subtitle {
-    border-bottom: 3px solid $Tertiary-color;
-    padding-bottom: 3px;
-    font-weight: 400;
-    opacity: 0.7;
-    font-size: 16px;
-    width: 45px;
-  }
-  &__bloc {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    background-color: white;
-    @include border-shadow;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    &__description {
-      font-weight: 400;
-    }
-    h3 {
-      margin: 0;
-      padding-top: 10px;
-      padding-bottom: 5px;
-    }
-    p {
-      @include opacity-text;
-      font-weight: 400;
-      font-size: 15px;
-    }
-  }
-  &__prix p {
-    font-weight: 600;
-    padding-right: 10px;
-  }
-}
-.btn--order {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }

@@ -29,3 +29,13 @@ $Back-color: #f6f6f6;
   margin-top: 50px;
   margin-bottom: 70px;
 }
+
+@mixin background-media {
+  background: linear-gradient(
+    90deg,
+    #99e2d0 0%,
+    #f6f6f6 20%,
+    #f6f6f6 80%,
+    #99e2d0 100%
+  );
+}
