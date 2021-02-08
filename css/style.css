@@ -377,10 +377,9 @@ h1 {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 5px 5px lightgrey;
-    margin-bottom: 20px;
     padding-left: 10px;
-    padding-right: 10px;
     margin-bottom: 25px;
+    cursor: pointer;
   }
   .menu__bloc__description {
     font-weight: 400;
@@ -398,6 +397,27 @@ h1 {
   .menu__prix p {
     font-weight: 600;
     padding-right: 10px;
+  }
+  .menu--selection {
+    width: 63px;
+    height: 63px;
+    border-radius: 0 20px 20px 0px;
+    background: #99e2d0;
+  }
+  .menu--validation {
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .menu--validation .fa-check {
+    color: #99e2d0;
+    font-size: 13px;
+    padding-top: 6px;
+    padding-left: 6px;
   }
 }
 @media screen and (min-width: 480px) {

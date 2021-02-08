@@ -56,10 +56,9 @@
       justify-content: space-between;
       background-color: white;
       @include border-shadow;
-      margin-bottom: 20px;
       padding-left: 10px;
-      padding-right: 10px;
       margin-bottom: 25px;
+      cursor: pointer;
       &__description {
         font-weight: 400;
       }
@@ -77,6 +76,27 @@
     &__prix p {
       font-weight: 600;
       padding-right: 10px;
+    }
+    &--selection {
+      width: 63px;
+      height: 63px;
+      border-radius: 0 20px 20px 0px;
+      background: $Tertiary-color;
+    }
+    &--validation {
+      background: white;
+      width: 25px;
+      height: 25px;
+      border-radius: 100px;
+      border: 1px solid white;
+      margin: auto;
+      margin-top: 15px;
+      .fa-check {
+        color: $Tertiary-color;
+        font-size: 13px;
+        padding-top: 6px;
+        padding-left: 6px;
+      }
     }
   }
 }
