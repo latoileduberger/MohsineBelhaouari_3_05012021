@@ -1,10 +1,9 @@
-.btn--principale {
-  text-align: center;
+.btn {
   background-color: $Back-color;
-  @include full-width;
+  padding-top: 25px;
   padding-bottom: 60px;
-
-  a {
+  text-align: center;
+  &--principale a {
     @include opacity-text;
     background: linear-gradient(180deg, $Secondary-color, $Primary-color);
     border-radius: 30px;
@@ -15,7 +14,7 @@
     font-weight: 400;
     font-size: 15px;
   }
-  .order {
+  &--secondaire a {
     padding-left: 55px;
     padding-right: 55px;
   }
