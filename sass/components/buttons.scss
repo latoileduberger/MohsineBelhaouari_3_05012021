@@ -19,3 +19,13 @@
     padding-right: 55px;
   }
 }
+
+.btn__heart {
+  &--on {
+    position: relative;
+  }
+  &--off {
+    position: absolute;
+    padding: 0;
+  }
+}

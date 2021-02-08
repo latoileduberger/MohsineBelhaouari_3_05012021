@@ -57,6 +57,14 @@ p {
   padding-right: 55px;
 }
 
+.btn__heart--on {
+  position: relative;
+}
+.btn__heart--off {
+  position: absolute;
+  padding: 0;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
