@@ -2,21 +2,28 @@
   background-color: $Back-color;
   padding-top: 25px;
   padding-bottom: 60px;
-  text-align: center;
-  &--principale a {
-    @include opacity-text;
-    background: linear-gradient(180deg, $Secondary-color, $Primary-color);
-    border-radius: 30px;
-    box-shadow: 0px 5px 5px lightgrey;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 400;
-    font-size: 15px;
+  &--principale {
+    width: 213px;
+    margin: auto;
+    a {
+      @include opacity-text;
+      background: $button-color;
+      border-radius: 30px;
+      box-shadow: 0px 3px 3px lightgrey;
+      padding: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-weight: 400;
+      font-size: 15px;
+    }
+    :hover {
+      box-shadow: 0px 2px 2px rgb(150, 150, 150);
+      opacity: 0.7;
+    }
   }
   &--secondaire a {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 65px;
+    padding-right: 65px;
   }
 }
 
