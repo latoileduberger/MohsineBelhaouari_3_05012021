@@ -29,10 +29,23 @@
 
 .btn__heart {
   position: relative;
-  &--on {
+  height: 21px;
+  width: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .btn--off.far.fa-heart {
     position: absolute;
+    &:hover {
+      color: blue;
+      opacity: 0.5;
+    }
   }
-  &--off {
-    position: absolute;
+  .btn--on.fas.fa-heart {
+    mix-blend-mode: lighten;
+    &:hover {
+      color: blue;
+      opacity: 1;
+    }
   }
 }

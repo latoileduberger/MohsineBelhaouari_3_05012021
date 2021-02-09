@@ -126,12 +126,25 @@ p {
 
 .btn__heart {
   position: relative;
+  height: 21px;
+  width: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.btn__heart--on {
+.btn__heart .btn--off.far.fa-heart {
   position: absolute;
 }
-.btn__heart--off {
-  position: absolute;
+.btn__heart .btn--off.far.fa-heart:hover {
+  color: blue;
+  opacity: 0.5;
+}
+.btn__heart .btn--on.fas.fa-heart {
+  mix-blend-mode: lighten;
+}
+.btn__heart .btn--on.fas.fa-heart:hover {
+  color: blue;
+  opacity: 1;
 }
 
 h1 {
