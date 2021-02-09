@@ -28,11 +28,11 @@
 }
 
 .btn__heart {
+  position: relative;
   &--on {
-    position: relative;
+    position: absolute;
   }
   &--off {
     position: absolute;
-    padding: 0;
   }
 }

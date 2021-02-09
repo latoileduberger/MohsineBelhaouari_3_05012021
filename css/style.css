@@ -64,12 +64,14 @@ p {
   padding-right: 65px;
 }
 
-.btn__heart--on {
+.btn__heart {
   position: relative;
+}
+.btn__heart--on {
+  position: absolute;
 }
 .btn__heart--off {
   position: absolute;
-  padding: 0;
 }
 
 h1 {
@@ -117,26 +119,6 @@ h1 {
     opacity: 0.8;
     margin: 0;
     padding-bottom: 10px;
-  }
-}
-@media screen and (min-width: 600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  footer {
-    padding-left: 35px;
-  }
-  footer .footer--tablets {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-@media screen and (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
-  .footer--desktops {
-    display: flex;
-    justify-content: center;
-  }
-  .footer--desktops p {
-    padding-right: 50px;
   }
 }
 @media screen and (min-width: 320px) {
