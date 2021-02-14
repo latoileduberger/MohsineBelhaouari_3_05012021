@@ -7,7 +7,7 @@
     margin: auto;
     a {
       @include opacity-text;
-      background: $button-color;
+      background: linear-gradient(180deg, $Secondary-color, $Primary-color);
       border-radius: 30px;
       box-shadow: 0px 3px 3px lightgrey;
       padding: 15px;
@@ -17,8 +17,9 @@
       font-size: 15px;
     }
     :hover {
-      box-shadow: 0px 2px 2px rgb(150, 150, 150);
+      box-shadow: 0px 3px 3px rgb(150, 150, 150);
       opacity: 0.7;
+      transition: 0.3s ease-in-out;
     }
   }
   &--secondaire a {
@@ -34,18 +35,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  .btn--off.far.fa-heart {
+  .fa-heart {
     position: absolute;
-    &:hover {
-      color: blue;
-      opacity: 0.5;
-    }
-  }
-  .btn--on.fas.fa-heart {
-    mix-blend-mode: lighten;
-    &:hover {
-      color: blue;
-      opacity: 1;
+    &.fas.btn--on {
+      color: white;
+      opacity: 0;
+      z-index: 1;
+      &:hover {
+        background: -webkit-linear-gradient(
+          225deg,
+          $Primary-color,
+          $Secondary-color
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+      }
     }
   }
 }
