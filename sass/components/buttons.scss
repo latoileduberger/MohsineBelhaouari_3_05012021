@@ -30,11 +30,9 @@
 
 .btn__heart {
   position: relative;
-  height: 21px;
   width: 21px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
   .fa-heart {
     position: absolute;
     &.fas.btn--on {

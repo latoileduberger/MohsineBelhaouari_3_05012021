@@ -127,11 +127,9 @@ p {
 
 .btn__heart {
   position: relative;
-  height: 21px;
   width: 21px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
 }
 .btn__heart .fa-heart {
   position: absolute;
