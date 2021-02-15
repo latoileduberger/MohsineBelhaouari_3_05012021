@@ -2,8 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background: $Back-color;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  animation: opacity-loader 3s both;
+}
+
+@keyframes opacity-loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 .loader {
@@ -15,9 +27,6 @@
 }
 
 @keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
   100% {
     transform: rotate(360deg);
   }
