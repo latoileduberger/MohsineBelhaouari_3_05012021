@@ -32,11 +32,6 @@
         font-family: "Shrikhand";
         font-weight: 600;
       }
-      .far {
-        font-size: 26px;
-        @include opacity-text;
-        margin-right: 10px;
-      }
     }
     &__section {
       padding-bottom: 15px;

@@ -29,7 +29,6 @@
 }
 
 .btn__heart {
-  position: relative;
   width: 21px;
   display: flex;
   align-items: flex-end;
@@ -51,6 +50,14 @@
         opacity: 1;
         transition: 0.5s ease-in-out;
       }
+    }
+  }
+  &--menu {
+    align-items: center;
+    margin-right: 20px;
+    .fas,
+    .far {
+      font-size: 26px;
     }
   }
 }
