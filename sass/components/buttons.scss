@@ -22,9 +22,12 @@
       transition: 0.3s ease-in-out;
     }
   }
-  &--secondaire a {
-    padding-left: 65px;
-    padding-right: 65px;
+  &--secondaire {
+    padding-bottom: 50px;
+    a {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
   }
 }
 
