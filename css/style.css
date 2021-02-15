@@ -375,6 +375,7 @@ h1 {
 
   .restaurant--tablets {
     display: flex;
+    width: 100%;
   }
 
   .restaurant__menu {
