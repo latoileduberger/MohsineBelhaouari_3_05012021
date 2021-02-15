@@ -1,0 +1,19 @@
+.menu__section__1 {
+  animation: fadeIn linear 1.2s;
+}
+.menu__section__2 {
+  animation: fadeIn linear 1.4s;
+}
+.menu__section__3 {
+  animation: fadeIn linear 1.6s;
+}
+
+@keyframes fadeIn {
+  70% {
+    opacity: 0;
+    padding-top: 15px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
