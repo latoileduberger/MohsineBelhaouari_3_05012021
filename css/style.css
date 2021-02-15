@@ -105,10 +105,14 @@ p {
   width: 100%;
   top: 0;
   z-index: 1;
-  animation: opacity-loader 3s both;
+  animation: opacity-loader 2s both;
 }
 
 @keyframes opacity-loader {
+  70% {
+    opacity: 1;
+    z-index: 1;
+  }
   100% {
     opacity: 0;
     z-index: -1;
