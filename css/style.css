@@ -35,6 +35,66 @@ p {
   font-size: 21px;
 }
 
+.btn {
+  background-color: #f6f6f6;
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+.btn--principale {
+  width: 213px;
+  margin: auto;
+}
+.btn--principale a {
+  opacity: 0.8;
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  border-radius: 30px;
+  box-shadow: 0px 3px 3px lightgrey;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.btn--principale :hover {
+  box-shadow: 0px 3px 3px #969696;
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+.btn--secondaire a {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.btn__heart {
+  width: 21px;
+  display: flex;
+  align-items: flex-end;
+}
+.btn__heart .fa-heart {
+  position: absolute;
+}
+.btn__heart .fa-heart.fas.btn--on {
+  color: white;
+  opacity: 0;
+  z-index: 1;
+}
+.btn__heart .fa-heart.fas.btn--on:hover {
+  background: -webkit-linear-gradient(225deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+.btn__heart--menu {
+  align-items: center;
+  margin-right: 20px;
+}
+.btn__heart--menu .fas,
+.btn__heart--menu .far {
+  font-size: 26px;
+}
+
 .loading-spinner {
   display: flex;
   justify-content: center;
@@ -101,66 +161,6 @@ p {
   background: #f6f6f6;
   border: solid white 3px;
   border-radius: 50%;
-}
-
-.btn {
-  background-color: #f6f6f6;
-  padding-top: 25px;
-  padding-bottom: 60px;
-}
-.btn--principale {
-  width: 213px;
-  margin: auto;
-}
-.btn--principale a {
-  opacity: 0.8;
-  background: linear-gradient(180deg, #ff79da, #9356dc);
-  border-radius: 30px;
-  box-shadow: 0px 3px 3px lightgrey;
-  padding: 15px;
-  padding-left: 25px;
-  padding-right: 25px;
-  font-weight: 400;
-  font-size: 15px;
-}
-.btn--principale :hover {
-  box-shadow: 0px 3px 3px #969696;
-  opacity: 0.7;
-  transition: 0.3s ease-in-out;
-}
-.btn--secondaire a {
-  padding-left: 65px;
-  padding-right: 65px;
-}
-
-.btn__heart {
-  width: 21px;
-  display: flex;
-  align-items: flex-end;
-}
-.btn__heart .fa-heart {
-  position: absolute;
-}
-.btn__heart .fa-heart.fas.btn--on {
-  color: white;
-  opacity: 0;
-  z-index: 1;
-}
-.btn__heart .fa-heart.fas.btn--on:hover {
-  background: -webkit-linear-gradient(225deg, #9356dc, #ff79da);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 1;
-  transition: 0.5s ease-in-out;
-}
-.btn__heart--menu {
-  align-items: center;
-  margin-right: 20px;
-}
-.btn__heart--menu .fas,
-.btn__heart--menu .far {
-  font-size: 26px;
 }
 
 h1 {

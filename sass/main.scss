@@ -1,9 +1,9 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
-@import "./base/loading-spinner";
 @import "./base/typography";
 @import "./components/buttons";
+@import "./layouts/loading-spinner";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./pages/home";
