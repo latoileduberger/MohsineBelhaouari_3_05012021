@@ -48,6 +48,10 @@ p {
 }
 
 @keyframes fadeIn {
+  0% {
+    opacity: 0;
+    padding-top: 15px;
+  }
   70% {
     opacity: 0;
     padding-top: 15px;
