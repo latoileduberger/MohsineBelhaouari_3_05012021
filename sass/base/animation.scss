@@ -1,3 +1,5 @@
+/* ******** Annimation menus *********** */
+
 .menu__section__1 {
   animation: fadeIn linear 1.2s;
 }
@@ -19,5 +21,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* ******** Annimation plats *********** */
+
+.menu__selection {
+  margin-right: -65px;
+  &--selection:hover {
+    margin-right: 0;
   }
 }

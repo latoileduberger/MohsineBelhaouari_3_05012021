@@ -54,6 +54,7 @@
       padding-left: 10px;
       margin-bottom: 25px;
       cursor: pointer;
+      overflow: hidden;
       &__description {
         font-weight: 400;
       }
@@ -68,11 +69,13 @@
         font-size: 15px;
       }
     }
-    &__prix p {
-      font-weight: 600;
-      padding-right: 10px;
+    &__prix {
+      p {
+        font-weight: 600;
+        padding-right: 10px;
+      }
     }
-    &--selection {
+    &__selection {
       width: 63px;
       height: 63px;
       border-radius: 0 20px 20px 0px;

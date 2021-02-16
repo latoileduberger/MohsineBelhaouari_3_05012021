@@ -35,6 +35,7 @@ p {
   font-size: 21px;
 }
 
+/* ******** Annimation menus *********** */
 .menu__section__1 {
   animation: fadeIn linear 1.2s;
 }
@@ -60,6 +61,14 @@ p {
     opacity: 1;
   }
 }
+/* ******** Annimation plats *********** */
+.menu__selection {
+  margin-right: -65px;
+}
+.menu__selection--selection:hover {
+  margin-right: 0;
+}
+
 .btn {
   background-color: #f6f6f6;
   padding-top: 25px;
@@ -479,6 +488,7 @@ h1 {
     padding-left: 10px;
     margin-bottom: 25px;
     cursor: pointer;
+    overflow: hidden;
   }
   .menu__bloc__description {
     font-weight: 400;
@@ -497,7 +507,7 @@ h1 {
     font-weight: 600;
     padding-right: 10px;
   }
-  .menu--selection {
+  .menu__selection {
     width: 63px;
     height: 63px;
     border-radius: 0 20px 20px 0px;
