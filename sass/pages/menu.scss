@@ -55,6 +55,7 @@
       margin-bottom: 25px;
       cursor: pointer;
       overflow: hidden;
+      position: relative;
       &__description {
         font-weight: 400;
       }
@@ -70,9 +71,10 @@
       }
     }
     &__prix {
+      position: absolute;
+      right: 20px;
       p {
         font-weight: 600;
-        padding-right: 10px;
       }
     }
     &__selection {

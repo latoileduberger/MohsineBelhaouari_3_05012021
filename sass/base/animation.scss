@@ -28,7 +28,13 @@
 
 .menu__selection {
   margin-right: -65px;
-  &--selection:hover {
+}
+
+.menu__bloc:hover {
+  .menu__selection {
     margin-right: 0;
+  }
+  .menu__prix {
+    margin-right: 65px;
   }
 }

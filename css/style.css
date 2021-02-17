@@ -65,8 +65,12 @@ p {
 .menu__selection {
   margin-right: -65px;
 }
-.menu__selection--selection:hover {
+
+.menu__bloc:hover .menu__selection {
   margin-right: 0;
+}
+.menu__bloc:hover .menu__prix {
+  margin-right: 65px;
 }
 
 .btn {
@@ -489,6 +493,7 @@ h1 {
     margin-bottom: 25px;
     cursor: pointer;
     overflow: hidden;
+    position: relative;
   }
   .menu__bloc__description {
     font-weight: 400;
@@ -503,9 +508,12 @@ h1 {
     font-weight: 400;
     font-size: 15px;
   }
+  .menu__prix {
+    position: absolute;
+    right: 20px;
+  }
   .menu__prix p {
     font-weight: 600;
-    padding-right: 10px;
   }
   .menu__selection {
     width: 63px;
