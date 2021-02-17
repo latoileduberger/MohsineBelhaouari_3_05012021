@@ -30,11 +30,28 @@
   margin-right: -65px;
 }
 
-.menu__bloc:hover {
-  .menu__selection {
-    margin-right: 0;
+.menu {
+  .menu__bloc:hover {
+    .menu__selection {
+      margin-right: 0;
+      transition: 0.5s;
+      .menu--validation {
+        animation: validation 0.5s;
+        transition: 0.5s;
+      }
+    }
+    .menu__prix {
+      margin-right: 65px;
+      transition: 0.5s;
+    }
   }
-  .menu__prix {
-    margin-right: 65px;
+}
+
+@keyframes validation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

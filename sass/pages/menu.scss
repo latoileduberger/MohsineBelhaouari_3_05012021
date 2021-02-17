@@ -74,6 +74,7 @@
     &__prix {
       position: absolute;
       right: 20px;
+      transition: 0.5s;
       p {
         font-weight: 600;
       }
@@ -83,6 +84,7 @@
       height: 73px;
       border-radius: 0 20px 20px 0px;
       background: $Tertiary-color;
+      transition: 0.5s;
     }
     &--validation {
       background: white;

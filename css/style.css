@@ -66,13 +66,27 @@ p {
   margin-right: -65px;
 }
 
-.menu__bloc:hover .menu__selection {
+.menu .menu__bloc:hover .menu__selection {
   margin-right: 0;
+  transition: 0.5s;
 }
-.menu__bloc:hover .menu__prix {
+.menu .menu__bloc:hover .menu__selection .menu--validation {
+  animation: validation 0.5s;
+  transition: 0.5s;
+}
+.menu .menu__bloc:hover .menu__prix {
   margin-right: 65px;
+  transition: 0.5s;
 }
 
+@keyframes validation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .btn {
   background-color: #f6f6f6;
   padding-top: 25px;
@@ -512,6 +526,7 @@ h1 {
   .menu__prix {
     position: absolute;
     right: 20px;
+    transition: 0.5s;
   }
   .menu__prix p {
     font-weight: 600;
@@ -521,6 +536,7 @@ h1 {
     height: 73px;
     border-radius: 0 20px 20px 0px;
     background: #99e2d0;
+    transition: 0.5s;
   }
   .menu--validation {
     background: white;
