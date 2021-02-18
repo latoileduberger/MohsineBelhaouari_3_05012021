@@ -1,0 +1,190 @@
+@media screen and (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  .principal {
+    text-align: center;
+    background-color: $Back-color;
+    &__localisation {
+      background-color: #eaeaea;
+      border-top: 3px solid #d4d4d4;
+      padding: 10px;
+      margin-bottom: 40px;
+      p {
+        padding-top: 5px;
+        @include opacity-text;
+        font-size: 14px;
+        font-weight: 500;
+        padding-bottom: 5px;
+      }
+      .fa-map-marker-alt {
+        margin-right: 8px;
+        font-size: 15px;
+      }
+    }
+    &__description {
+      h2 {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+        font-weight: 300;
+        @include opacity-text;
+      }
+    }
+  }
+
+  aside {
+    @include marge;
+    @include full-width;
+    h2 {
+      padding-bottom: 30px;
+      margin: 0;
+    }
+
+    .function {
+      display: flex;
+      margin: auto;
+      align-items: center;
+      margin-bottom: 25px;
+      max-width: 350px;
+
+      &__order {
+        display: flex;
+        align-items: center;
+        background-color: $Back-color;
+        padding: 25px;
+        width: 100%;
+        margin-left: 10px;
+        @include border-shadow;
+        P {
+          font-weight: 600;
+          @include opacity-text;
+          padding: 0;
+          font-size: 14px;
+        }
+      }
+      > .dark {
+        background-color: #f5edff;
+        p {
+          @include opacity-text;
+        }
+      }
+
+      &__number {
+        background: $Primary-color;
+        color: white;
+        padding: 0.2em 0.55em;
+        border-radius: 50%;
+        position: absolute;
+        opacity: 1;
+      }
+      .fas {
+        margin-right: 20px;
+        margin-left: 10px;
+        opacity: 0.5;
+        &.fa-store {
+          color: $Primary-color;
+          opacity: 1;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .restaurant {
+    background-color: $Back-color;
+    @include full-width;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    &__menu {
+      background-color: #ffffff;
+      @include border-shadow;
+      width: 100%;
+      margin-left: 0px;
+      position: relative;
+      margin-bottom: 25px;
+    }
+    &__new {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #99e2d0;
+      color: #008766;
+      padding: 6px;
+      border-radius: 3px;
+      width: 70px;
+      opacity: 1;
+      text-align: center;
+      font-size: 13px;
+    }
+    img {
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &__description {
+      h3 {
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+      p {
+        font-weight: 400;
+        @include opacity-text;
+        margin: 0;
+        padding-bottom: 15px;
+        opacity: 0.9;
+        font-size: 14px;
+      }
+    }
+    .far {
+      @include opacity-text;
+    }
+    a {
+      color: black;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+  aside {
+    @include background-media-1;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  .restaurant h2 {
+    text-align: left;
+    padding-left: 15px;
+  }
+  .restaurant--tablets {
+    display: flex;
+    width: 100%;
+  }
+  .restaurant__menu {
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+
+  .restaurant--desktops {
+    display: flex;
+  }
+}

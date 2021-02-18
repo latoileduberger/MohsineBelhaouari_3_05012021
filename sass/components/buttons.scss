@@ -1,0 +1,65 @@
+.btn {
+  background-color: $Back-color;
+  padding-top: 25px;
+  padding-bottom: 60px;
+  &--principale {
+    width: 191px;
+    margin: auto;
+    a {
+      @include opacity-text;
+      background: linear-gradient(180deg, $Secondary-color, $Primary-color);
+      border-radius: 30px;
+      box-shadow: 0px 3px 3px lightgrey;
+      padding: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-weight: 400;
+    }
+    :hover {
+      box-shadow: 0px 3px 3px rgb(150, 150, 150);
+      opacity: 0.7;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  &--secondaire {
+    padding-bottom: 50px;
+    a {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+}
+
+.btn__heart {
+  width: 21px;
+  display: flex;
+  align-items: flex-end;
+  .fa-heart {
+    position: absolute;
+    &.fas.btn--on {
+      color: white;
+      opacity: 0;
+      z-index: 1;
+      &:hover {
+        background: -webkit-linear-gradient(
+          225deg,
+          $Primary-color,
+          $Secondary-color
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+  &--menu {
+    align-items: center;
+    margin-right: 20px;
+    .fas,
+    .far {
+      font-size: 20px;
+    }
+  }
+}
