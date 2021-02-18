@@ -63,7 +63,7 @@ p {
 }
 /* ******** Annimation plats *********** */
 .menu__selection {
-  margin-right: -57px;
+  margin-right: -70px;
 }
 
 .menu .menu__bloc:hover .menu__selection {
@@ -456,7 +456,7 @@ h1 {
     opacity: 0.8;
     position: absolute;
     padding-left: 20px;
-    padding-top: 8px;
+    padding-top: 10px;
   }
 
   .menu {
@@ -514,12 +514,13 @@ h1 {
   }
   .menu__bloc .menu__description {
     width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .menu__bloc .menu__description h3 {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 5px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -527,7 +528,6 @@ h1 {
     opacity: 0.8;
     font-weight: 400;
     padding-bottom: 10px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -540,7 +540,7 @@ h1 {
     padding-bottom: 10px;
   }
   .menu__selection {
-    width: 63px;
+    width: 80px;
     height: 63px;
     border-radius: 0 15px 15px 0px;
     background: #99e2d0;
